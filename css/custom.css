@@ -1,0 +1,36 @@
+body {
+  background-color: #e0e0e0;
+}
+.head-content {
+  margin: 50px 0px 20px 0px;
+}
+.main-content {
+  min-height: 400px;
+}
+.calc-btn {
+  margin-top: 200px;
+}
+.results {
+  margin-top: 155px;
+}
+.results > p {
+  padding-left: 5px;
+}
+span {
+  font-weight: bold;
+}
+.input-field label {
+  color: #455a64;
+}
+
+.input-field textarea[type=text]:focus + label {
+  color: #455a64;
+}
+
+.input-field textarea[type=text]:focus {
+  border-bottom: 1px solid #455a64;
+  box-shadow: 0 1px 0 0 #455a64;
+}
+.footer-lead {
+  font-size: 10px;
+}

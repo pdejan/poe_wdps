@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>POE Weapon DPS Calculator</title>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <script type="text/javascript" src="js/calculator.js"></script>
+  <script type="text/javascript">
+    function cleartxt(){
+      $("#textarea").val("");
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="row head-content">
+      <h5 class="center-align">Path of Exile Weapon DPS Calculator</h4>
+      <p class="center-align">Hover over weapon ingame and press CRTL + C to copy weapon info, using CTRL + V paste that info in text area below and press Calculate button.</p>
+    </div>
+    <div class="row main-content">
+      <div class="col s12 m5 l5">
+        <div class="input-field">
+          <textarea name="textarea" id="textarea" class="materialize-textarea" onfocus="cleartxt()"></textarea>
+          <label for="textarea">Paste weapon info here</label>
+        </div>
+      </div>
+      <div class="col s6 m3 l3 calc-btn">
+        <a class="waves-effect blue-grey darken-2 btn" onclick="submit();">Calculate</a>
+      </div>
+      <div class="col s6 m4 l4 results">
+        <p class="blue-grey-text text-darken-2">Physical DPS: <span id="phydps"></span></p>
+        <p class="blue-grey-text text-darken-2">Elemental DPS: <span id="eledps"></span></p>
+        <p class="blue-grey-text text-darken-2">Total DPS: <span id="totaldps"></span></p>
+      </div>
+    </div>
+    <div class="row footer-content">
+      <p class="center-align footer-lead">This site is fan-made and not affiliated with Grinding Gear Games in any way.</p>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+</body>
+</html>
