@@ -10,7 +10,6 @@ function submit(){
   // Rare + Unique
   if (rarityCheck == "Rarity: Rare" || rarityCheck == "Rarity: Unique"){
 
-      //fuck you GGG
       var qualityCheck = data[5].toString();
       var quality = qualityCheck.charAt(0) == "Q";
 
@@ -21,9 +20,7 @@ function submit(){
       var eleDmgCheck = data[6].toString();
       var isEle = eleDmgCheck.charAt(0) == "E";
       }
-
-
-
+      
       // Attack Speed
      if (quality == true && isEle == true) {
         var attSp = data[9].split(':')[1];
@@ -36,7 +33,6 @@ function submit(){
        var attSp = data[7].split(':')[1];
        attSpeed = parseFloat(attSp);
      }
-
      // Physical Damage
       if (quality == true) {
         var phyDmg = data[6].split(':')[1];
@@ -51,7 +47,6 @@ function submit(){
         var phyDmgHigh = parseInt(phyDmg1);
         phyDamage = phyDmgLow + phyDmgHigh;
       }
-
         // Elemental Damage
      if (quality == true) {
        var eleDmg = data[7].split(':')[1];
@@ -146,7 +141,6 @@ function submit(){
       var eleDmgCheck = data[5].toString();
       var isEle = eleDmgCheck.charAt(0) == "E";
       }
-
       // Attack Speed
      if (quality == true && isEle == true) {
         var attSp = data[8].split(':')[1];
@@ -159,7 +153,6 @@ function submit(){
        var attSp = data[6].split(':')[1];
        attSpeed = parseFloat(attSp);
      }
-
      // Physical Damage
       if (quality == true) {
         var phyDmg = data[5].split(':')[1];
@@ -174,7 +167,6 @@ function submit(){
         var phyDmgHigh = parseInt(phyDmg1);
         phyDamage = phyDmgLow + phyDmgHigh;
       }
-
       // Elemental Damage
       if (quality == true) {
         var eleDmg = data[6].split(':')[1];
@@ -261,7 +253,6 @@ function submit(){
 
       var qualityCheck = data[4].toString();
       var quality = qualityCheck.charAt(0) == "Q";
-
       // Attack Speed
      if (quality == true) {
         var attSp = data[7].split(':')[1];
@@ -270,7 +261,6 @@ function submit(){
        var attSp = data[6].split(':')[1];
        attSpeed = parseFloat(attSp);
      }
-
      // Physical Damage
       if (quality == true) {
         var phyDmg = data[5].split(':')[1];
