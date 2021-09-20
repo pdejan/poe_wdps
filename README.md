@@ -10,3 +10,6 @@ Output consists of Physical DPS, Elemental DPS and Total DPS.
 ### Style
 [Materialize](http://materializecss.com/) is used as front-end framework.
 
+
+### Archived
+This repository was learning project and small aplication used to leverage data which game Path of Exile provided about its weapons to calculate their DPS (damage per second). It is heavily outdated and now archived.
